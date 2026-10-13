@@ -1,0 +1,206 @@
+{
+  "timestamp": "2026-10-13 21:07:35",
+  "execution_time_sec": 11.78,
+  "source": {
+    "name": "Game Recommendations on Steam",
+    "author": "Anton Kozyriev",
+    "platform": "Kaggle",
+    "license": "CC0: Public Domain",
+    "url": "https://www.kaggle.com/datasets/antonkozyriev/game-recommendations-on-steam"
+  },
+  "directory_comparison": {
+    "games.csv": {
+      "data_raw": {
+        "path": "/Users/rhythmshokeen/Downloads/GameRec Engine/data/raw/games.csv",
+        "size_bytes": 4863790,
+        "size_mb": 4.64,
+        "inode": 38170043,
+        "is_symlink": false
+      },
+      "dataset": {
+        "path": "/Users/rhythmshokeen/Downloads/GameRec Engine/dataset/games.csv",
+        "size_bytes": 4863790,
+        "size_mb": 4.64,
+        "inode": 38170043,
+        "is_symlink": false
+      },
+      "identical_physical_file": true
+    },
+    "games_metadata.json": {
+      "data_raw": {
+        "path": "/Users/rhythmshokeen/Downloads/GameRec Engine/data/raw/games_metadata.json",
+        "size_bytes": 17548605,
+        "size_mb": 16.74,
+        "inode": 38170044,
+        "is_symlink": false
+      },
+      "dataset": {
+        "path": "/Users/rhythmshokeen/Downloads/GameRec Engine/dataset/games_metadata.json",
+        "size_bytes": 17548605,
+        "size_mb": 16.74,
+        "inode": 38170044,
+        "is_symlink": false
+      },
+      "identical_physical_file": true
+    },
+    "recommendations.csv": {
+      "data_raw": {
+        "path": "/Users/rhythmshokeen/Downloads/GameRec Engine/data/raw/recommendations.csv",
+        "size_bytes": 2023223067,
+        "size_mb": 1929.5,
+        "inode": 38170045,
+        "is_symlink": false
+      },
+      "dataset": {
+        "path": "/Users/rhythmshokeen/Downloads/GameRec Engine/dataset/recommendations.csv",
+        "size_bytes": 2023223067,
+        "size_mb": 1929.5,
+        "inode": 38170045,
+        "is_symlink": false
+      },
+      "identical_physical_file": true
+    },
+    "users.csv": {
+      "data_raw": {
+        "path": "/Users/rhythmshokeen/Downloads/GameRec Engine/data/raw/users.csv",
+        "size_bytes": 193068018,
+        "size_mb": 184.12,
+        "inode": 38170058,
+        "is_symlink": false
+      },
+      "dataset": {
+        "path": "/Users/rhythmshokeen/Downloads/GameRec Engine/dataset/users.csv",
+        "size_bytes": 193068018,
+        "size_mb": 184.12,
+        "inode": 38170058,
+        "is_symlink": false
+      },
+      "identical_physical_file": true
+    }
+  },
+  "games_csv": {
+    "rows": 50872,
+    "cols": 13,
+    "unique_app_id": 50872,
+    "dtypes": {
+      "app_id": "Int64",
+      "title": "String",
+      "date_release": "String",
+      "win": "Boolean",
+      "mac": "Boolean",
+      "linux": "Boolean",
+      "rating": "String",
+      "positive_ratio": "Int64",
+      "user_reviews": "Int64",
+      "price_final": "Float64",
+      "price_original": "Float64",
+      "discount": "Float64",
+      "steam_deck": "Boolean"
+    },
+    "nulls": {
+      "app_id": 0,
+      "title": 0,
+      "date_release": 0,
+      "win": 0,
+      "mac": 0,
+      "linux": 0,
+      "rating": 0,
+      "positive_ratio": 0,
+      "user_reviews": 0,
+      "price_final": 0,
+      "price_original": 0,
+      "discount": 0,
+      "steam_deck": 0
+    }
+  },
+  "games_metadata_json": {
+    "lines": 50872,
+    "unique_app_id": 50872,
+    "empty_descriptions": 10373,
+    "empty_tags": 1244,
+    "vocab_tags_count": 441
+  },
+  "users_csv": {
+    "rows": 14306064,
+    "unique_users": 14306064,
+    "schema": {
+      "user_id": "Int64",
+      "products": "Int64",
+      "reviews": "Int64"
+    },
+    "nulls": {
+      "user_id": 0,
+      "products": 0,
+      "reviews": 0
+    },
+    "stats": {
+      "unique_users": 14306064,
+      "min_products": 0,
+      "median_products": 55.0,
+      "mean_products": 116.37339277945352,
+      "max_products": 32214,
+      "min_reviews": 0,
+      "median_reviews": 1.0,
+      "mean_reviews": 2.8767377246459964,
+      "max_reviews": 6045
+    }
+  },
+  "recommendations_csv": {
+    "rows": 41154794,
+    "schema": {
+      "app_id": "Int64",
+      "helpful": "Int64",
+      "funny": "Int64",
+      "date": "String",
+      "is_recommended": "Boolean",
+      "hours": "Float64",
+      "user_id": "Int64",
+      "review_id": "Int64"
+    },
+    "nulls": {
+      "app_id": 0,
+      "helpful": 0,
+      "funny": 0,
+      "date": 0,
+      "is_recommended": 0,
+      "hours": 0,
+      "user_id": 0,
+      "review_id": 0
+    },
+    "stats": {
+      "unique_apps": 37610,
+      "unique_users": 13781059,
+      "unique_reviews": 41154794,
+      "positive_rec_ratio": 0.8578441189621797,
+      "min_hours": 0.0,
+      "median_hours": 27.3,
+      "mean_hours": 100.60223780004817,
+      "p95_hours": 517.4,
+      "max_hours": 1000.0,
+      "min_date": "2010-10-15",
+      "max_date": "2022-12-31",
+      "max_helpful": 36212,
+      "max_funny": 28109
+    },
+    "duplicate_interactions": 21,
+    "user_sparsity": {
+      "users_with_1": 7573027,
+      "users_2_to_4": 4297201,
+      "users_gte_5": 1910831,
+      "users_gte_10": 680812,
+      "users_gte_20": 213364
+    }
+  },
+  "join_keys": {
+    "games_to_recommendations": "app_id",
+    "users_to_recommendations": "user_id",
+    "orphan_recommendations_apps": 0,
+    "unreviewed_catalog_games": 13262
+  },
+  "leakage_risks": [
+    "1. Temporal Leakage: If a standard random train/test split is used across interactions, the model would train on future user actions to predict past actions. Evaluation MUST use temporal holdout (splitting by interaction date or holding out each user's latest interaction).",
+    "2. Future Meta-feedback Leakage: Features 'helpful' and 'funny' accumulate over the entire lifetime of a review and reflect social feedback received long after the interaction occurred. These must NEVER be used as model inputs to predict recommendations.",
+    "3. Playtime (hours) Target Leakage: 'hours' recorded in the review reflects total accumulated playtime at the time the review was written, not at recommendation time. However, it serves as a valid implicit confidence weight for collaborative filtering (log1p(hours)).",
+    "4. Cold-Start Leakage: Evaluating collaborative filtering on users/items with 0 training interactions without fallback can artificially inflate failure rates or cause errors; models must be evaluated with explicit cold-start protocols."
+  ]
+}

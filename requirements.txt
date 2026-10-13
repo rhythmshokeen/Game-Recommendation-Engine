@@ -1,0 +1,18 @@
+# Core data processing & linear algebra
+polars>=1.0.0
+pyarrow>=14.0.0
+pandas>=2.0.0
+numpy>=1.24.0
+scipy>=1.11.0
+
+# Machine learning & recommendation baselines
+scikit-learn>=1.4.0
+
+# Interactive frontend
+streamlit>=1.35.0
+
+# Visualization & plotting
+matplotlib>=3.8.0
+
+# Testing & code quality
+pytest>=8.0.0

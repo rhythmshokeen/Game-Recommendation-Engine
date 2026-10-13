@@ -1,0 +1,52 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Large Data Files & Datasets (never commit raw gigabyte files)
+dataset/
+data/raw
+data/raw/
+data/interim/
+data/processed/interactions_benchmark.parquet
+data/processed/train_interactions.parquet
+data/processed/test_interactions.parquet
+*.csv
+*.csv.gz
+*.egg-info/
+
+# Allow catalog and metrics for standalone app execution
+!data/processed/games_catalog.parquet
+!data/processed/dataset_metrics.json
+
+# Logs and Scratch
+*.log
+scratch/
+artifacts/
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Streamlit Local Runtime
+.streamlit/secrets.toml

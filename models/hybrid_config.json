@@ -1,0 +1,6 @@
+{
+  "default_alpha": 0.5,
+  "min_history_for_hybrid": 3,
+  "diversity_lambda": 0.7,
+  "max_per_franchise": 2
+}

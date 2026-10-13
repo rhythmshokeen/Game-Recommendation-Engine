@@ -1,0 +1,52 @@
+{
+  "catalog": {
+    "total_games": 50872,
+    "unique_app_ids": 50872,
+    "games_with_description": 40499,
+    "games_missing_description": 10373,
+    "games_with_tags": 49628,
+    "games_missing_tags": 1244,
+    "unreviewed_catalog_games": 13262,
+    "unreviewed_ratio_pct": 26.07
+  },
+  "interactions": {
+    "total_records": 41154773,
+    "unique_users": 13781059,
+    "unique_games": 37610,
+    "orphan_games": 0,
+    "positive_count": 35304382,
+    "positive_ratio_pct": 85.78,
+    "negative_count": 5850391,
+    "negative_ratio_pct": 14.22,
+    "date_range": [
+      "2010-10-15",
+      "2022-12-31"
+    ],
+    "playtime_stats": {
+      "min": 0.0,
+      "median": 27.299999237060547,
+      "mean": 100.6,
+      "p95": 517.4,
+      "max": 1000.0
+    },
+    "matrix_sparsity_pct": 99.99206,
+    "user_interactions_per_user": {
+      "min_deg": 1,
+      "p25_deg": 1.0,
+      "median_deg": 1.0,
+      "mean_deg": 2.986328771976087,
+      "p75_deg": 3.0,
+      "p95_deg": 9.0,
+      "max_deg": 6045
+    },
+    "game_interactions_per_game": {
+      "min_deg": 1,
+      "p25_deg": 13.0,
+      "median_deg": 39.0,
+      "mean_deg": 1094.2508109545333,
+      "p75_deg": 180.0,
+      "p95_deg": 2889.0,
+      "max_deg": 319491
+    }
+  }
+}
