@@ -294,25 +294,23 @@ Evaluated strictly on the held-out temporal evaluation test set (`data/processed
 
 ## 🖥️ Interactive Streamlit Web Application
 
-The web interface is located at `demo/app.py` and features a Steam-inspired dark aesthetic:
+The web interface is located at `demo/app.py` and features a clean, beginner-friendly dark aesthetic:
 
 ### Application Sections:
-1. **🌟 Discover & Search**:
-   - Filter games by 30+ Steam genres, operating system (Windows, macOS, Linux, Steam Deck Verified), and pricing.
-   - Real-time catalog substring search across all 50,872 titles.
+1. **🌟 Discover Games**:
+   - Browse popular Steam titles or search catalog by title.
+   - Filter by popular gaming genres (Action, RPG, Strategy, Indie, etc.).
+   - Configure number of displayed games (6, 12, 18, 24).
+   - Display each game's cover art, title, genre tags, positive rating percentage, and price.
 2. **🎯 Similar Games**:
-   - Choose any seed game from the catalog.
-   - Surfaces top 10 content-similar recommendations with shared tag breakdowns, similarity scores, and MMR franchise deduplication.
-3. **👤 Personalized Library**:
-   - Load pre-built gamer personas (*RPG & Open World*, *Competitive FPS*, *Indie Roguelike*, *Cold-Start New User*) or add custom titles with played hours.
-   - Real-time $\alpha$ slider ($0.0 \to 1.0$) and MMR diversity controls.
-   - Informative banners indicating when cold-start or limited-history fallbacks are active.
-4. **⚖️ Model Comparison**:
-   - Side-by-side tabs comparing all 5 algorithms on the identical user library or seed game.
-   - Inspects ranking differences, score calibration, and algorithmic rationales.
-5. **📊 Offline Evaluation**:
-   - Live Model Leaderboard showing genuine held-out evaluation metrics.
-   - Interactive comparative bar charts for Hit Rate@5, Hit Rate@10, and Hit Rate@20.
+   - Select or search any seed game from the catalog.
+   - Surfaces top 5–10 similar titles based on shared gameplay elements and community affinity.
+   - Shows cover art, title, genre tags, and a clear, beginner-friendly explanation of similarity.
+3. **👤 Personalized Recommendations**:
+   - Select favorite games or preferred genres.
+   - Generates tailored recommendations using the calibrated hybrid recommendation engine.
+   - Interactive Like, Played, and Dismiss action buttons on game cards.
+   - Sensible fallback to top community favorites for users with no preferences yet.
 
 ---
 
